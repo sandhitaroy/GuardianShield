@@ -1,8 +1,8 @@
 # GuardianShield
 Elderly Care and Safety Platform
 ## Contributors:
-Sandhita Roy
-Shreya Bhattacharya
-Oindrila Sur
-Soham Patra
-Ronit Laha
+Sandhita Roy <br>
+Shreya Bhattacharya <br>
+Oindrila Sur <br>
+Soham Patra <br>
+Ronit Laha <br>
