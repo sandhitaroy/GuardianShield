@@ -1,11 +1,11 @@
 # GuardianShield
 Elderly Care and Safety Platform
 ## Contributors:
-Sandhita Roy <br>
-Shreya Bhattacharya <br>
-Oindrila Sur <br>
-Soham Patra <br>
-Ronit Laha <br>
+[Sandhita Roy](https://github.com/sandhitaroy) <br>
+[Shreya Bhattacharya](https://github.com/sb109201) <br>
+[Oindrila Sur](https://github.com/iamoin) <br>
+[Soham Patra](https://github.com/SohamPatra) <br>
+[Ronit Laha](https://github.com/RonitLaha1405) <br>
 
 ## Problem Statement: 
 The problem revolves around the need to provide effective and comprehensive care for the elderly, ensuring their safety and quality of life. 
