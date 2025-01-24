@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuardianShield - Create An Account</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="logo">
+            <img src="images/GuardianShield logo.png" alt="GuardianShield Logo">
+        </div>
+        <h2>Create An Account</h2>
+        <form id="signup-form">
+            <label for="full-name">FULL NAME</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Enter your Full Name" required>
+            
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+            
+            <label for="mobile">MOBILE NO.</label>
+            <input type="text" id="mobile" name="mobile" placeholder="Enter your Mobile No." required>
+            
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" name="password" placeholder="Set your Password" required>
+
+            <!-- Role Selection -->
+            <label for="role">SELECT ROLE</label>
+            <select id="role" name="role" required>
+                <option value="" disabled selected>Select your role</option>
+                <option value="elderly">Elderly</option>
+                <option value="caregiver">Caregiver</option>
+                <option value="doctor">Doctor</option>
+                <option value="healthcare_professional">Healthcare Professional</option>
+                <option value="emergency_service">Emergency Service</option>
+                <option value="administrator">Administrator</option>
+            </select>
+            
+            <button type="submit" class="signup-button">Sign Up</button>
+            
+            <p class="signin">Already have an account? <a href="login.html">Sign in</a></p> 
+        </form>
+    </div>
+<script src="script1.js"></script>
+</body>
+</html>

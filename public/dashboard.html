@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="logo">
+            <img src="images/guardianshield logo.png" alt="GuardianShield Logo">
+        </div>
+        <h2>Welcome, <span id="user-name">User</span>!</h2>
+        <p>Your access has been granted. Explore the dashboard to manage your details, health, and services.</p>
+        
+        <div class="dashboard-links">
+            <a href="/profile" class="dashboard-button">My Profile</a>
+            <a href="/services" class="dashboard-button">Available Services</a>
+            <a href="/emergency" class="dashboard-button">Emergency Alert</a>
+            <button class="dashboard-button" onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <script>
+        // Get full name from local storage
+        const userFullName = localStorage.getItem('fullName');
+
+        if (userFullName) {
+            document.getElementById('user-name').textContent = userFullName;
+        } else {
+            alert("Session expired! Please log in again.");
+            window.location.href = "login.html"; // Redirect to login page if session is lost
+        }
+
+        // Logout function to clear storage
+        function logout() {
+            localStorage.removeItem('fullName');
+            localStorage.removeItem('token'); // Clear authentication token if stored
+            window.location.href = "login.html"; // Redirect to login page
+        }
+    </script>
+</body>
+</html>
