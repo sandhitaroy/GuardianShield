@@ -19,8 +19,8 @@ const signup = async (req, res) => {
             return res.status(400).json({ msg: 'Password must be at least 8 characters long and include uppercase, lowercase, a number, and a special character' });
         }
 
-        let user = await User.findOne({ email });
-        if (user) return res.status(400).json({ msg: 'User already exists' });
+        let user = await User.findOne({ $or: [{ email }, { mobile }] });
+        if (user) return res.status(400).json({ msg: 'User with this email or mobile number already exists' });
 
         // Create new user without manually hashing the password here
         user = new User({ fullName, email, mobile, password, role });
