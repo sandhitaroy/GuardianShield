@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Service - GuardianShield</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="images/GuardianShield logo.png" alt="Guardian Shield Logo" class="large-logo">
+            </div>
+            <ul>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Booked Services</a></li>
+                <li><a href="#">Prescriptions</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Help Centre</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <header>
+                <h1>Book a Service</h1>
+            </header>
+            <section class="booking-form">
+                <form id="book-service-form">
+                    <div class="form-group">
+                        <label for="family-member">Select Family Member:</label>
+                        <select id="family-member" name="family-member" required>
+                            <option value="">--Select Member--</option>
+                            <!--<option value="john-smith">John Smith</option>-->
+                            <!--<option value="jenny-smith">Jenny Smith</option>-->
+                            <!--<option value="lily-smith">Lily Smith</option>-->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Select Service:</label>
+                        <select id="service" name="service" required>
+                            <option value="">--Select Service--</option>
+                            <option value="medical-consultation">Medical Consultation</option>
+                            <option value="nursing-care">Nursing Care</option>
+                            <option value="physiotherapy">Physiotherapy</option>
+                            <option value="mental-health-services">Mental Health Services</option>
+                            <option value="personal-hygiene-assistance">Personal Hygiene Assistance</option>
+                            <option value="mobility-assistance">Mobility Assistance</option>
+                            <option value="housekeeping">Housekeeping</option>
+                            <option value="meal-preparation">Meal Preparation</option>
+                            <option value="home-maintenance">Home Maintenance</option>
+                            <option value="social-engagement">Social Engagement</option>
+                            <option value="activity-planning">Activity Planning</option>
+                            <option value="emergency-response">Emergency Response</option>
+                            <option value="fall-prevention">Fall Prevention</option>
+                            <option value="medical-transport">Medical Transport</option>
+                            <option value="general-transport">General Transport</option>
+                            <option value="tech-support">Tech Support</option>
+                            <option value="home-automation">Home Automation</option>
+                            <option value="memory-care">Memory Care</option>
+                            <option value="cognitive-assessments">Cognitive Assessments</option>
+                            <option value="legal-advice">Legal Advice</option>
+                            <option value="financial-management">Financial Management</option>
+                            <option value="pet-care">Pet Care</option>
+                            <option value="errand-services">Errand Services</option>
+                            <option value="travel-assistance">Travel Assistance</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="service-date">Select Date:</label>
+                        <input type="date" id="service-date" name="service-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service-time">Select Time:</label>
+                        <input type="time" id="service-time" name="service-time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="payment-method">Payment Method:</label>
+                        <select id="payment-method" name="payment-method" required>
+                            <option value="">--Select Payment Method--</option>
+                            <option value="card">Card</option>
+                            <option value="upi">UPI</option>
+                            <option value="net-banking">Net Banking</option>
+                        </select>
+                    </div>
+                    <div id="card-details" class="payment-details" style="display: none;">
+                        <div class="form-group">
+                            <label for="card-number">Card Number:</label>
+                            <input type="text" id="card-number" name="card-number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="card-expiry">Expiration Date:</label>
+                            <input type="text" id="card-expiry" name="card-expiry" placeholder="MM/YY" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="card-cvv">CVV:</label>
+                            <input type="text" id="card-cvv" name="card-cvv" required>
+                        </div>
+                    </div>
+                    <div id="upi-details" class="payment-details" style="display: none;">
+                        <div class="form-group">
+                            <label for="upi-id">UPI ID:</label>
+                            <input type="text" id="upi-id" name="upi-id" required>
+                        </div>
+                    </div>
+                    <div id="net-banking-details" class="payment-details" style="display: none;">
+                        <div class="form-group">
+                            <label for="bank">Select Bank:</label>
+                            <select id="bank" name="bank" required>
+                                <option value="">--Select Bank--</option>
+                                <option value="bank1">Bank 1</option>
+                                <option value="bank2">Bank 2</option>
+                            </select>
+                        </div>
+                    </div>
+			
+                    <div class="form-group">
+                            <label>
+                            <input type="checkbox" name="terms" required> I agree to the terms and conditions
+                            </label>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Place Order</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
